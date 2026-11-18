@@ -26,6 +26,10 @@
           "value": "http://home-go2rtc:1984"
         },
         {
+          "key": "HOME_SUBNET",
+          "value": "${HOME_SUBNET}"
+        },
+        {
           "key": "HOME_SHELLYS",
           "value": "${HOME_SHELLYS}"
         },

@@ -33,11 +33,19 @@
     },
     {
       "type": "text",
-      "label": "Shellys to read (for now)",
+      "label": "Home network",
+      "env_variable": "HOME_SUBNET",
+      "required": false,
+      "placeholder": "192.168.1.0/24",
+      "hint": "The network the hub searches for Shellys (at most a /22). The found ones are listed in the app to import or ignore; you can change the network there too."
+    },
+    {
+      "type": "text",
+      "label": "Shellys to import (optional)",
       "env_variable": "HOME_SHELLYS",
       "required": false,
       "placeholder": "192.168.1.41,192.168.1.43",
-      "hint": "Addresses of Shellys the hub follows, read only, comma-separated. Empty: the hub shows a simulated flat. Device adoption in the app replaces this field."
+      "hint": "Addresses of Shellys to import as soon as they are found, comma-separated. With neither this nor the home network, the hub shows a simulated flat."
     },
     {
       "type": "text",
