@@ -1,0 +1,56 @@
+{
+  "name": "Home",
+  "id": "home",
+  "available": false,
+  "short_desc": "Smart-home hub for the Home apps: devices, rooms, rules, energy, door and cameras.",
+  "author": "Florian Geymayer",
+  "port": 8200,
+  "categories": [
+    "automation"
+  ],
+  "description": "Hub for the Home apps (iOS, watchOS, Android, Wear OS, desktop) and the web app it serves at its own address: talks to the devices in the home network (Shellys first), keeps rooms, people and rights, runs scenes and rules, records history and energy, rings the phones when someone is at the door. Expose it on its domain; the apps and the Shellys connect there.",
+  "tipi_version": 1,
+  "version": "0.1.0",
+  "source": "https://github.com/geymayer-apps/home",
+  "exposable": true,
+  "force_expose": true,
+  "no_gui": false,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1794961769741,
+  "updated_at": 1794987140098,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "fqdnip",
+      "label": "Address of this server for the phones",
+      "env_variable": "WEBRTC_HOST",
+      "required": true,
+      "placeholder": "192.168.1.20",
+      "hint": "The LAN address (or VPN address) the phones reach this server on, for live video and talk on port 8557/tcp."
+    },
+    {
+      "type": "text",
+      "label": "APNs key id",
+      "env_variable": "HOME_APNS_KEY_ID",
+      "required": false,
+      "hint": "iPhone pushes. The .p8 key itself goes into the data folder as apns-key.p8, see the description."
+    },
+    {
+      "type": "text",
+      "label": "Apple team id",
+      "env_variable": "HOME_APNS_TEAM_ID",
+      "required": false,
+      "hint": "iPhone pushes, together with the APNs key id."
+    },
+    {
+      "type": "password",
+      "label": "ntfy token for Android pushes",
+      "env_variable": "HOME_NTFY_TOKEN",
+      "required": false,
+      "hint": "Optional. A token of an ntfy user that may write to the UnifiedPush topics (up*) on your ntfy server. Without it Android devices get no pushes."
+    }
+  ]
+}

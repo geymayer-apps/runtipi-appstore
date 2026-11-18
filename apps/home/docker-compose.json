@@ -1,0 +1,67 @@
+{
+  "services": [
+    {
+      "name": "home",
+      "image": "ghcr.io/geymayer-apps/home-hub:0.1.0",
+      "isMain": true,
+      "internalPort": 8200,
+      "dependsOn": [
+        "home-go2rtc"
+      ],
+      "environment": [
+        {
+          "key": "TZ",
+          "value": "${TZ}"
+        },
+        {
+          "key": "HOME_PUBLIC_URL",
+          "value": "${APP_PROTOCOL:-https}://${APP_DOMAIN}"
+        },
+        {
+          "key": "HOME_DATA_DIR",
+          "value": "/data"
+        },
+        {
+          "key": "HOME_GO2RTC_URL",
+          "value": "http://home-go2rtc:1984"
+        },
+        {
+          "key": "HOME_APNS_KEY_ID",
+          "value": "${HOME_APNS_KEY_ID}"
+        },
+        {
+          "key": "HOME_APNS_TEAM_ID",
+          "value": "${HOME_APNS_TEAM_ID}"
+        },
+        {
+          "key": "HOME_NTFY_TOKEN",
+          "value": "${HOME_NTFY_TOKEN}"
+        }
+      ],
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data",
+          "containerPath": "/data"
+        }
+      ]
+    },
+    {
+      "name": "home-go2rtc",
+      "image": "alexxit/go2rtc:1.9.10",
+      "command": [
+        "go2rtc",
+        "-config",
+        "{\"api\":{\"listen\":\":1984\"},\"rtsp\":{\"listen\":\"127.0.0.1:8554\"},\"webrtc\":{\"listen\":\":8557/tcp\",\"candidates\":[\"${WEBRTC_HOST}:8557/tcp\"]},\"log\":{\"level\":\"info\"}}"
+      ],
+      "addPorts": [
+        {
+          "hostPort": 8557,
+          "containerPort": 8557,
+          "tcp": true
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 2,
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json"
+}

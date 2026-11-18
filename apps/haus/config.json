@@ -11,7 +11,7 @@
   "description": "Server for the Haus apps (Android, iOS, macOS, Windows) and the web app it serves at its own address: meter readings, the Betriebskosten split and yearly statement, tasks, appointments, equipment and a wiki. Open the app's domain in a browser, or enter it in one of the apps.",
   "tipi_version": 13,
   "version": "0.7.0",
-  "source": "https://github.com/geymayer/haus",
+  "source": "https://github.com/geymayer-apps/haus",
   "exposable": true,
   "no_gui": false,
   "supported_architectures": [

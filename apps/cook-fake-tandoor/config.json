@@ -11,7 +11,7 @@
   "description": "A fake Tandoor Recipes server with invented demo data (user test / test), the Demo profile of Cook's dev builds. Everything is in memory: a restart resets it, nothing real is stored, and it never talks to your real Tandoor. Start it only while testing and stop it afterwards (capped at 64 MB and a quarter CPU).",
   "tipi_version": 1,
   "version": "1.0.0",
-  "source": "https://github.com/geymayer/cook",
+  "source": "https://github.com/geymayer-apps/cook",
   "exposable": true,
   "no_gui": false,
   "supported_architectures": [
