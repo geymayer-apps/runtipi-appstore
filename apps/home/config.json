@@ -9,8 +9,8 @@
     "automation"
   ],
   "description": "Hub for the Home apps (iOS, watchOS, Android, Wear OS, desktop) and the web app it serves at its own address: talks to the devices in the home network (Shellys first), keeps rooms, people and rights, runs scenes and rules, records history and energy, rings the phones when someone is at the door. Expose it on its domain; the apps and the Shellys connect there.",
-  "tipi_version": 2,
-  "version": "0.2.0",
+  "tipi_version": 3,
+  "version": "0.3.0",
   "source": "https://github.com/geymayer-apps/home",
   "exposable": true,
   "force_expose": true,
@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1795015920025,
+  "updated_at": 1795025370793,
   "dynamic_config": true,
   "form_fields": [
     {
@@ -46,6 +46,14 @@
       "required": false,
       "placeholder": "192.168.1.41,192.168.1.43",
       "hint": "Addresses of Shellys to import as soon as they are found, comma-separated. With neither this nor the home network, the hub shows a simulated flat."
+    },
+    {
+      "type": "text",
+      "label": "Backup key (optional)",
+      "env_variable": "HOME_BACKUP_RECIPIENT",
+      "required": false,
+      "placeholder": "age1...",
+      "hint": "An age public key the hub encrypts its nightly snapshots to. You can set it in the app (Setup › Hub) instead; the private key stays with you, never on the server."
     },
     {
       "type": "text",
