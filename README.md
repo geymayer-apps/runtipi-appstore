@@ -18,6 +18,7 @@ them after a `docker login ghcr.io` with a token that can only read packages.
 | `home` | `ghcr.io/geymayer-apps/home-hub` (+ `alexxit/go2rtc`) | [geymayer-apps/home](https://github.com/geymayer-apps/home) (private); hidden (`available: false`) until the first hub image |
 | `breadcrumbs` | `ghcr.io/geymayer-apps/breadcrumbs-server` (`:dev` until the first release) | [geymayer-apps/breadcrumbs](https://github.com/geymayer-apps/breadcrumbs) (private) |
 | `ledger` | `ghcr.io/geymayer-apps/ledger-server` | [geymayer-apps/ledger](https://github.com/geymayer-apps/ledger) (private) |
+| `homelab` | `ghcr.io/geymayer-apps/homelab-server` (host network, port 8230) | [geymayer-apps/homelab](https://github.com/geymayer-apps/homelab) (private) |
 
 Planned: `cook-fake-tandoor` (Cook's fake Tandoor for the Cook dev build's Demo profile), once
 geymayer-apps/cook publishes an image of `tools/fake_tandoor.py`; there is none yet.
