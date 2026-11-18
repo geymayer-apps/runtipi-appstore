@@ -5,7 +5,9 @@ at its own address. It talks to the devices in the home network, Shellys first, 
 and their rights, runs scenes and rules, records history and energy, and rings the phones when
 someone is at the door. The data stays on this server.
 
-**Not released yet.** The entry stays hidden (`available: false`) until the first hub image exists.
+**Early version (0.1).** The hub reads its devices and shows them to the apps; it does not switch
+anything yet, and there is no pairing: one access token, printed on this server with
+`docker exec <container> /app/docker-entrypoint.sh token`, opens it.
 
 ## Setup
 

@@ -1,7 +1,7 @@
 {
   "name": "Home",
   "id": "home",
-  "available": false,
+  "available": true,
   "short_desc": "Smart-home hub for the Home apps: devices, rooms, rules, energy, door and cameras.",
   "author": "Florian Geymayer",
   "port": 8200,
@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1794987140098,
+  "updated_at": 1795012136965,
   "dynamic_config": true,
   "form_fields": [
     {
