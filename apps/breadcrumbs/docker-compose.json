@@ -17,6 +17,10 @@
         {
           "key": "BREADCRUMBS_RETAIN_DETAILED_DAYS",
           "value": "${BREADCRUMBS_RETAIN_DETAILED_DAYS}"
+        },
+        {
+          "key": "BREADCRUMBS_PUBLIC_URL",
+          "value": "${BREADCRUMBS_PUBLIC_URL}"
         }
       ],
       "volumes": [

@@ -23,6 +23,13 @@
   "dynamic_config": true,
   "form_fields": [
     {
+      "type": "url",
+      "label": "Public address",
+      "hint": "The https:// address the phone uses (the domain you expose this app on). With it the pairing code in the log also comes as a QR code to scan in the app. Optional.",
+      "required": false,
+      "env_variable": "BREADCRUMBS_PUBLIC_URL"
+    },
+    {
       "type": "password",
       "label": "Backup passphrase",
       "hint": "Encrypts the server's backups (AES-256-GCM). Keep it in the password manager too: without it a backup cannot be restored. Empty: plain backups.",

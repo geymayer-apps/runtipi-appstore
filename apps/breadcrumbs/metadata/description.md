@@ -16,7 +16,8 @@ The pairing code is in the app's log (runtipi's log view) at every start while n
 Breadcrumbs pairing code: K7M2 QX9P
 ```
 
-In the app: More › Server & sync, the server's `https://` address and the code. For another phone, or
+In the app: More › Server & sync, the server's `https://` address and the code. With the "Public address" set,
+the log also shows a QR code: "Scan the server's QR code" in the app fills in both. For another phone, or
 after the code expired (24 h):
 
 ```sh
