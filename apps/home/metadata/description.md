@@ -15,9 +15,10 @@ Expose the app on its domain with a certificate the phones trust; the apps and t
 there (their WebSockets must pass the proxy). The domain is reachable at home and over the VPN; it
 does not need to be reachable from the internet.
 
-- **Shellys**: the hub connects to each Shelly over the Shelly's own WebSocket in the home network;
-  nothing changes on the Shelly. For now, "Shellys to read" lists the addresses it follows, and it
-  only reads them; empty, it shows a simulated flat. Adoption in the app replaces the field.
+- **Shellys**: the hub searches the "Home network" for Shellys and lists them in the app, where
+  each one is imported or ignored. It connects to an imported Shelly over the Shelly's own
+  WebSocket and only reads it; nothing changes on the Shelly. "Shellys to import" imports
+  addresses at once. With neither field, the hub shows a simulated flat.
   Whatever a Shelly can do on its own (timers, schedules, wall switches) keeps working while this
   server is down.
 - **Live video and talk**: go2rtc, the second container of this app, publishes `8557/tcp`.
