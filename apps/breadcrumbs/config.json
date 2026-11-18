@@ -1,0 +1,51 @@
+{
+  "name": "Breadcrumbs",
+  "id": "breadcrumbs",
+  "available": true,
+  "short_desc": "Private location timeline and KlimaTicket ride counter: the phone's stays, moves and rides, kept at home.",
+  "author": "Florian Geymayer",
+  "port": 8160,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Server for the Breadcrumbs app: the phone's location timeline (stays, moves, places, GPS fixes) and its counted KlimaTicket rides, synced to the homelab and searchable. There is no web interface yet: expose the app on a domain reachable at home and over the VPN only, then pair the phone with the code from the app's log. Dev image: follows the newest dev build until the first release.",
+  "tipi_version": 1,
+  "version": "0.1.0-dev",
+  "source": "https://github.com/geymayer-apps/breadcrumbs",
+  "exposable": true,
+  "no_gui": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1794964033462,
+  "updated_at": 1794964033462,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "url",
+      "label": "Public address",
+      "hint": "The https:// address the phone uses (the domain you expose this app on). With it the pairing code in the log also comes as a QR code to scan in the app. Optional.",
+      "required": false,
+      "env_variable": "BREADCRUMBS_PUBLIC_URL"
+    },
+    {
+      "type": "password",
+      "label": "Backup passphrase",
+      "hint": "Encrypts the server's backups (AES-256-GCM). Keep it in the password manager too: without it a backup cannot be restored. Empty: plain backups.",
+      "required": false,
+      "env_variable": "BREADCRUMBS_BACKUP_PASSPHRASE",
+      "min": 12
+    },
+    {
+      "type": "number",
+      "label": "Keep detailed GPS for (days)",
+      "hint": "Detailed trip fixes older than this are thinned to one per minute; stays, moves, places and rides are kept. 0 keeps everything. Default 365.",
+      "required": false,
+      "env_variable": "BREADCRUMBS_RETAIN_DETAILED_DAYS",
+      "default": 365,
+      "min": 0,
+      "max": 36500
+    }
+  ]
+}

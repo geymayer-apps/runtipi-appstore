@@ -13,11 +13,11 @@ the web app (since 0.4.0), or enter it in one of the apps. A browser pairs with 
 The server runs as uid 10001 and runtipi creates the data folder as root. Once, after installing:
 
 ```sh
-sudo chown -R 10001:10001 <runtipi>/app-data/geymayer/haus/data
+sudo chown -R 10001:10001 <runtipi>/app-data/geymayer-apps/haus/data
 ```
 
 Then restart the app. The setup code for the first device is in
-`<runtipi>/app-data/geymayer/haus/data/setup-code.txt`.
+`<runtipi>/app-data/geymayer-apps/haus/data/setup-code.txt`.
 
 ## Backups
 
@@ -27,6 +27,6 @@ Take them with the server's own backup command; it is consistent while the serve
 docker exec <container> java -jar /app/haus-server.jar backup /data/backups/haus-$(date +%F).tar.gz
 ```
 
-They land in `<runtipi>/app-data/geymayer/haus/data/backups/`. Copy them off the machine.
+They land in `<runtipi>/app-data/geymayer-apps/haus/data/backups/`. Copy them off the machine.
 
-Install, restore and the workbook import: [README](https://github.com/geymayer/haus#install-on-a-homelab-docker-compose).
+Install, restore and the workbook import: [README](https://github.com/geymayer-apps/haus#install-on-a-homelab-docker-compose).

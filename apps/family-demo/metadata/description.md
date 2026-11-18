@@ -31,7 +31,7 @@ Who chooses:
   again after.
 
 Both datasets stay when you switch; nothing is deleted. To start Familie Muster afresh, stop the
-app, delete `<runtipi>/app-data/geymayer/family-demo/data/demo` and start it again.
+app, delete `<runtipi>/app-data/geymayer-apps/family-demo/data/demo` and start it again.
 
 The dev app authenticates its switch with the **Dev switch token** (valid on this demo server only).
 You see it in two places:

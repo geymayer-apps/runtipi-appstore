@@ -1,8 +1,8 @@
 # geymayer's runtipi app store
 
 A [runtipi](https://runtipi.io) app store for my own apps. Add it in runtipi under Settings → App
-Stores with this repository's URL and the name `geymayer` (the name ends up in data paths such as
-`app-data/geymayer/haus/`, so keep it).
+Stores with this repository's URL and the name `geymayer-apps` (the name ends up in data paths such as
+`app-data/geymayer-apps/haus/`, so keep it).
 
 The repository is public because runtipi cannot sign in to a store. It holds only app definitions:
 no data, domains or tokens. The images it points to are private on `ghcr.io`; the homelab pulls
@@ -10,15 +10,16 @@ them after a `docker login ghcr.io` with a token that can only read packages.
 
 | App | Image | Source |
 |---|---|---|
-| `haus` | `ghcr.io/geymayer/haus-server` | [geymayer/haus](https://github.com/geymayer/haus) (private) |
-| `home-relay` | `ghcr.io/geymayer/home-relay` (+ `alexxit/go2rtc`) | [geymayer/home](https://github.com/geymayer/home) (private) |
-| `family` | `ghcr.io/geymayer/family-server` | [geymayer/family](https://github.com/geymayer/family) (private) |
+| `haus` | `ghcr.io/geymayer-apps/haus-server` | [geymayer-apps/haus](https://github.com/geymayer-apps/haus) (private) |
+| `home-relay` | `ghcr.io/geymayer/home-relay` (+ `alexxit/go2rtc`) | [geymayer-apps/home-ha](https://github.com/geymayer-apps/home-ha) (private) |
+| `family` | `ghcr.io/geymayer-apps/family-server` | [geymayer-apps/family](https://github.com/geymayer-apps/family) (private) |
 | `haus-demo` | `ghcr.io/geymayer/haus-server` | Haus on demo data or a copy of the real data, for dev builds |
 | `family-demo` | `ghcr.io/geymayer/family-server` | Family on demo data or a copy of the real data, for dev builds |
 | `home` | `ghcr.io/geymayer-apps/home-hub` (+ `alexxit/go2rtc`) | [geymayer-apps/home](https://github.com/geymayer-apps/home) (private); hidden (`available: false`) until the first hub image |
+| `breadcrumbs` | `ghcr.io/geymayer-apps/breadcrumbs-server` (`:dev` until the first release) | [geymayer-apps/breadcrumbs](https://github.com/geymayer-apps/breadcrumbs) (private) |
 
 Planned: `cook-fake-tandoor` (Cook's fake Tandoor for the Cook dev build's Demo profile), once
-geymayer/cook publishes an image of `tools/fake_tandoor.py`; there is none yet.
+geymayer-apps/cook publishes an image of `tools/fake_tandoor.py`; there is none yet.
 
 ## Demo apps
 

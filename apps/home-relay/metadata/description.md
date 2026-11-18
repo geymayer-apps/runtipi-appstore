@@ -18,7 +18,7 @@ needs WebRTC).
 ## Pushes
 
 Without keys the relay works, and rings reach an open app only. For pushes put the key files into
-`<runtipi>/app-data/geymayer/home-relay/data/` and restart the app:
+`<runtipi>/app-data/geymayer-apps/home-relay/data/` and restart the app:
 
 - iPhone: the `.p8` key from developer.apple.com as `apns-key.p8`, plus its key id and the team id
   in this app's settings.
@@ -27,4 +27,4 @@ Without keys the relay works, and rings reach an open app only. For pushes put t
 The log says `APNs push enabled` / `FCM push enabled` when it found them. The folder also holds the
 relay's database, so back it up the way you back up the other app data.
 
-Setup, hardware and keys: [door-intercom-setup](https://github.com/geymayer/home/blob/develop/docs/door-intercom-setup.md).
+Setup, hardware and keys: [door-intercom-setup](https://github.com/geymayer-apps/home-ha/blob/develop/docs/door-intercom-setup.md).
