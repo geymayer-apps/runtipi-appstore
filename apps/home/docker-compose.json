@@ -32,6 +32,10 @@
         {
           "key": "HOME_APNS_TEAM_ID",
           "value": "${HOME_APNS_TEAM_ID}"
+        },
+        {
+          "key": "HOME_NTFY_TOKEN",
+          "value": "${HOME_NTFY_TOKEN}"
         }
       ],
       "volumes": [

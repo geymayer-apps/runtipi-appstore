@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1794961769741,
+  "updated_at": 1794962146265,
   "dynamic_config": true,
   "form_fields": [
     {
@@ -44,6 +44,13 @@
       "env_variable": "HOME_APNS_TEAM_ID",
       "required": false,
       "hint": "iPhone pushes, together with the APNs key id."
+    },
+    {
+      "type": "password",
+      "label": "ntfy token for Android pushes",
+      "env_variable": "HOME_NTFY_TOKEN",
+      "required": false,
+      "hint": "Optional. A token of an ntfy user that may write to the UnifiedPush topics (up*) on your ntfy server. Without it Android devices get no pushes."
     }
   ]
 }
