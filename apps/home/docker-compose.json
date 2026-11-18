@@ -4,7 +4,7 @@
       "name": "home",
       "image": "ghcr.io/geymayer-apps/home-hub:0.1.0",
       "isMain": true,
-      "internalPort": 8140,
+      "internalPort": 8200,
       "dependsOn": [
         "home-go2rtc"
       ],
