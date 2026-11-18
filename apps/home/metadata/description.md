@@ -21,8 +21,9 @@ does not need to be reachable from the internet.
   addresses at once. With neither field, the hub shows a simulated flat.
   Whatever a Shelly can do on its own (timers, schedules, wall switches) keeps working while this
   server is down.
-- **Live video and talk**: go2rtc, the second container of this app, publishes `8557/tcp`.
-  "Address of this server for the phones" is the address the phones reach it on.
+- **Live video and talk**: the hub plays the door station's video to the phones itself, over
+  port `8557` (TCP and UDP). "Address of this server for the phones" is the address the phones
+  reach it on, in the home network or over the VPN.
 - **Pushes**: for iPhones put the `.p8` key from developer.apple.com as `apns-key.p8` into
   `<runtipi>/app-data/geymayer-apps/home/data/` and enter its key id and the team id in this app's
   settings. Android uses UnifiedPush through your ntfy server (no Google services): enter the

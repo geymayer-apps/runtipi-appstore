@@ -29,7 +29,7 @@
       "env_variable": "WEBRTC_HOST",
       "required": true,
       "placeholder": "192.168.1.20",
-      "hint": "The LAN address (or VPN address) the phones reach this server on, for live video and talk on port 8557/tcp."
+      "hint": "The LAN address (or VPN address) the phones reach this server on, for live video and talk at the door on port 8557 (TCP and UDP)."
     },
     {
       "type": "text",
@@ -53,7 +53,7 @@
       "env_variable": "HOME_BACKUP_RECIPIENT",
       "required": false,
       "placeholder": "age1...",
-      "hint": "An age public key the hub encrypts its nightly snapshots to. You can set it in the app (Setup › Hub) instead; the private key stays with you, never on the server."
+      "hint": "An age public key the hub encrypts its nightly snapshots to. You can set it in the app (Setup \u203a Hub) instead; the private key stays with you, never on the server."
     },
     {
       "type": "text",
