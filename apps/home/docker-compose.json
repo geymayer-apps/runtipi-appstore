@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "home",
-      "image": "ghcr.io/geymayer-apps/home-server:0.2.0",
+      "image": "ghcr.io/geymayer-apps/home-server:0.3.0",
       "isMain": true,
       "internalPort": 8200,
       "dependsOn": [
@@ -32,6 +32,10 @@
         {
           "key": "HOME_SHELLYS",
           "value": "${HOME_SHELLYS}"
+        },
+        {
+          "key": "HOME_BACKUP_RECIPIENT",
+          "value": "${HOME_BACKUP_RECIPIENT}"
         },
         {
           "key": "HOME_APNS_KEY_ID",
