@@ -19,7 +19,7 @@ and over the VPN; it does not need to be reachable from the internet.
 - **Live video and talk**: go2rtc, the second container of this app, publishes `8557/tcp`.
   "Address of this server for the phones" is the address the phones reach it on.
 - **Pushes**: for iPhones put the `.p8` key from developer.apple.com as `apns-key.p8` into
-  `<runtipi>/app-data/geymayer/home/data/` and enter its key id and the team id in this app's
+  `<runtipi>/app-data/geymayer-apps/home/data/` and enter its key id and the team id in this app's
   settings. Android uses UnifiedPush through your ntfy server (no Google services): enter the
   token of an ntfy user that may write to `up*`; each Android device needs the ntfy app, signed in
   with its own ntfy user. Restart the app.
