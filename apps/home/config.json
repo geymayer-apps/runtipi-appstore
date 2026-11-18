@@ -33,6 +33,14 @@
     },
     {
       "type": "text",
+      "label": "Shellys to read (for now)",
+      "env_variable": "HOME_SHELLYS",
+      "required": false,
+      "placeholder": "192.168.1.41,192.168.1.43",
+      "hint": "Addresses of Shellys the hub follows, read only, comma-separated. Empty: the hub shows a simulated flat. Device adoption in the app replaces this field."
+    },
+    {
+      "type": "text",
       "label": "APNs key id",
       "env_variable": "HOME_APNS_KEY_ID",
       "required": false,
