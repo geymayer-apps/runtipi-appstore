@@ -1,0 +1,91 @@
+{
+  "name": "Homelab",
+  "id": "homelab",
+  "available": true,
+  "short_desc": "Watches the dev machines, runners, CI and Runtipi; alerts through ntfy when something breaks.",
+  "author": "Florian Geymayer",
+  "port": 8230,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Server for the Homelab app: it watches the build machines (Mac, PC, homelab), the organisation's GitHub Actions runners and CI, the projects and releases in dev-infra, and the apps of this Runtipi, and sends an alert through ntfy when something needs attention, with the steps to fix it. The Android app pairs with it on the home network or over the VPN. It runs on the host network (port 8230) so it can wake the PC with Wake-on-LAN and reach Runtipi at http://localhost. Keep it off the internet.",
+  "tipi_version": 1,
+  "version": "0.1.0",
+  "source": "https://github.com/geymayer-apps/homelab",
+  "exposable": false,
+  "no_gui": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1795025070000,
+  "updated_at": 1795025070000,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "Pairing secret",
+      "hint": "Any secret of 8 or more characters; the app asks for it once when it pairs.",
+      "required": true,
+      "env_variable": "HOMELAB_PAIRING_SECRET",
+      "min": 8
+    },
+    {
+      "type": "password",
+      "label": "GitHub token",
+      "hint": "Fine-grained, resource owner geymayer-apps, all repositories. Repository permissions: Actions read and write, Variables read, Contents read, Metadata read. Organisation permission: Self-hosted runners read.",
+      "required": true,
+      "env_variable": "HOMELAB_GITHUB_TOKEN"
+    },
+    {
+      "type": "text",
+      "label": "GitHub organisation",
+      "required": false,
+      "env_variable": "HOMELAB_GITHUB_ORG",
+      "default": "geymayer-apps"
+    },
+    {
+      "type": "url",
+      "label": "Runtipi URL",
+      "hint": "How the server reaches this Runtipi's dashboard. Default http://localhost.",
+      "required": false,
+      "env_variable": "HOMELAB_RUNTIPI_URL",
+      "default": "http://localhost"
+    },
+    {
+      "type": "url",
+      "label": "ntfy server",
+      "hint": "Optional, e.g. http://localhost:8095 for the ntfy app of this Runtipi. Without it alerts go to the log only.",
+      "required": false,
+      "env_variable": "HOMELAB_NTFY_URL"
+    },
+    {
+      "type": "text",
+      "label": "ntfy topic",
+      "hint": "The topic the ntfy app on the phone subscribes to; pick one nobody guesses.",
+      "required": false,
+      "env_variable": "HOMELAB_NTFY_TOPIC"
+    },
+    {
+      "type": "password",
+      "label": "ntfy access token",
+      "hint": "Optional, when the ntfy server needs a login.",
+      "required": false,
+      "env_variable": "HOMELAB_NTFY_TOKEN"
+    },
+    {
+      "type": "text",
+      "label": "PC MAC address (Wake-on-LAN)",
+      "hint": "Optional, e.g. AA:BB:CC:DD:EE:FF, the one setup-windows.ps1 printed. Empty: the app's Wake PC button says it is not set up.",
+      "required": false,
+      "env_variable": "HOMELAB_WAKE_PC_MAC"
+    },
+    {
+      "type": "text",
+      "label": "Wake-on-LAN broadcast address",
+      "hint": "Optional: the home network's broadcast address, e.g. 192.0.2.255. Default 255.255.255.255.",
+      "required": false,
+      "env_variable": "HOMELAB_WAKE_BROADCAST"
+    }
+  ]
+}
