@@ -15,6 +15,7 @@ them after a `docker login ghcr.io` with a token that can only read packages.
 | `family` | `ghcr.io/geymayer/family-server` | [geymayer/family](https://github.com/geymayer/family) (private) |
 | `haus-demo` | `ghcr.io/geymayer/haus-server` | Haus on demo data or a copy of the real data, for dev builds |
 | `family-demo` | `ghcr.io/geymayer/family-server` | Family on demo data or a copy of the real data, for dev builds |
+| `breadcrumbs` | `ghcr.io/geymayer-apps/breadcrumbs-server` (`:dev` until the first release) | [geymayer-apps/breadcrumbs](https://github.com/geymayer-apps/breadcrumbs) (private) |
 
 Planned: `cook-fake-tandoor` (Cook's fake Tandoor for the Cook dev build's Demo profile), once
 geymayer/cook publishes an image of `tools/fake_tandoor.py`; there is none yet.
