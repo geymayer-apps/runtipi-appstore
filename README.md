@@ -15,6 +15,7 @@ them after a `docker login ghcr.io` with a token that can only read packages.
 | `family` | `ghcr.io/geymayer/family-server` | [geymayer/family](https://github.com/geymayer/family) (private) |
 | `haus-demo` | `ghcr.io/geymayer/haus-server` | Haus on demo data or a copy of the real data, for dev builds |
 | `family-demo` | `ghcr.io/geymayer/family-server` | Family on demo data or a copy of the real data, for dev builds |
+| `home` | `ghcr.io/geymayer-apps/home-hub` (+ `alexxit/go2rtc`) | [geymayer-apps/home](https://github.com/geymayer-apps/home) (private); hidden (`available: false`) until the first hub image |
 
 Planned: `cook-fake-tandoor` (Cook's fake Tandoor for the Cook dev build's Demo profile), once
 geymayer/cook publishes an image of `tools/fake_tandoor.py`; there is none yet.
@@ -48,7 +49,7 @@ same on each push.
 
 ## Releasing a new version of an app
 
-1. Push the new image tag (Haus and Family: `v0.2.0`, Home relay: `relay-v0.2.0`; their workflows also do steps 2 and 3).
+1. Push the new image tag (Haus and Family: `v0.2.0`, Home relay: `relay-v0.2.0`, Home: `hub-v0.2.0`; their workflows also do steps 2 and 3).
 2. In the app's `docker-compose.json`, change `image` to the new tag.
 3. In its `config.json`, set `version` to the tag, raise `tipi_version` by one and set
    `updated_at` to now in milliseconds.
