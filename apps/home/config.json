@@ -9,8 +9,8 @@
     "automation"
   ],
   "description": "Hub for the Home apps (iOS, watchOS, Android, Wear OS, desktop) and the web app it serves at its own address: talks to the devices in the home network (Shellys first), keeps rooms, people and rights, runs scenes and rules, records history and energy, rings the phones when someone is at the door. Expose it on its domain; the apps and the Shellys connect there.",
-  "tipi_version": 4,
-  "version": "0.4.1",
+  "tipi_version": 5,
+  "version": "0.5.0",
   "source": "https://github.com/geymayer-apps/home",
   "exposable": true,
   "force_expose": true,
@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1795038544722,
+  "updated_at": 1795043125308,
   "dynamic_config": true,
   "form_fields": [
     {
@@ -29,7 +29,7 @@
       "env_variable": "WEBRTC_HOST",
       "required": true,
       "placeholder": "192.168.1.20",
-      "hint": "The LAN address (or VPN address) the phones reach this server on, for live video and talk on port 8557/tcp."
+      "hint": "The LAN address (or VPN address) the phones reach this server on, for live video and talk at the door on port 8557 (TCP and UDP)."
     },
     {
       "type": "text",

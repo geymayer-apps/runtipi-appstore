@@ -2,12 +2,9 @@
   "services": [
     {
       "name": "home",
-      "image": "ghcr.io/geymayer-apps/home-server:0.4.1",
+      "image": "ghcr.io/geymayer-apps/home-server:0.5.0",
       "isMain": true,
       "internalPort": 8200,
-      "dependsOn": [
-        "home-go2rtc"
-      ],
       "environment": [
         {
           "key": "TZ",
@@ -22,8 +19,12 @@
           "value": "/data"
         },
         {
-          "key": "HOME_GO2RTC_URL",
-          "value": "http://home-go2rtc:1984"
+          "key": "HOME_WEBRTC_HOST",
+          "value": "${WEBRTC_HOST}"
+        },
+        {
+          "key": "HOME_WEBRTC_PORT",
+          "value": "8557"
         },
         {
           "key": "HOME_SUBNET",
@@ -59,21 +60,17 @@
           "hostPath": "${APP_DATA_DIR}/data",
           "containerPath": "/data"
         }
-      ]
-    },
-    {
-      "name": "home-go2rtc",
-      "image": "alexxit/go2rtc:1.9.10",
-      "command": [
-        "go2rtc",
-        "-config",
-        "{\"api\":{\"listen\":\":1984\"},\"rtsp\":{\"listen\":\"127.0.0.1:8554\"},\"webrtc\":{\"listen\":\":8557/tcp\",\"candidates\":[\"${WEBRTC_HOST}:8557/tcp\"]},\"log\":{\"level\":\"info\"}}"
       ],
       "addPorts": [
         {
           "hostPort": 8557,
           "containerPort": 8557,
           "tcp": true
+        },
+        {
+          "hostPort": 8557,
+          "containerPort": 8557,
+          "udp": true
         }
       ]
     }
