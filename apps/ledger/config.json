@@ -9,8 +9,8 @@
     "finance"
   ],
   "description": "Server for Ledger and the web app it serves at its own address: write and issue invoices with gap-free numbers and immutable PDFs, export a quarter or a year as a ZIP of PDFs and CSVs for the Steuerberater, and match payments (by hand or from a CSV). The desktop app (macOS, Windows) pairs with the same server. Open the app's domain in a browser and pair with the setup code from the app's log.",
-  "tipi_version": 1,
-  "version": "0.1.1",
+  "tipi_version": 2,
+  "version": "0.1.2",
   "source": "https://github.com/geymayer-apps/ledger",
   "exposable": true,
   "no_gui": false,
@@ -19,7 +19,7 @@
     "amd64"
   ],
   "created_at": 1795011936155,
-  "updated_at": 1795011936155,
+  "updated_at": 1795018057641,
   "dynamic_config": true,
   "form_fields": []
 }

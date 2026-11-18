@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "ledger",
-      "image": "ghcr.io/geymayer-apps/ledger-server:0.1.1",
+      "image": "ghcr.io/geymayer-apps/ledger-server:0.1.2",
       "isMain": true,
       "internalPort": 8170,
       "environment": [
