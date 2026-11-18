@@ -70,6 +70,14 @@
       "hint": "iPhone pushes, together with the APNs key id."
     },
     {
+      "type": "url",
+      "label": "ntfy server for Android pushes",
+      "env_variable": "HOME_NTFY_URL",
+      "required": false,
+      "placeholder": "https://ntfy.example.org",
+      "hint": "Optional. The ntfy server the Android phones get rings through (UnifiedPush). The hub sends only to endpoints on this server, with the token below."
+    },
+    {
       "type": "password",
       "label": "ntfy token for Android pushes",
       "env_variable": "HOME_NTFY_TOKEN",
