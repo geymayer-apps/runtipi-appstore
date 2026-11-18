@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "home",
-      "image": "ghcr.io/geymayer-apps/home-hub:0.1.0",
+      "image": "ghcr.io/geymayer-apps/home-server:0.1.0",
       "isMain": true,
       "internalPort": 8200,
       "dependsOn": [
@@ -24,6 +24,10 @@
         {
           "key": "HOME_GO2RTC_URL",
           "value": "http://home-go2rtc:1984"
+        },
+        {
+          "key": "HOME_SHELLYS",
+          "value": "${HOME_SHELLYS}"
         },
         {
           "key": "HOME_APNS_KEY_ID",
