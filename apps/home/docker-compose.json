@@ -46,6 +46,10 @@
           "value": "${HOME_APNS_TEAM_ID}"
         },
         {
+          "key": "HOME_NTFY_URL",
+          "value": "${HOME_NTFY_URL}"
+        },
+        {
           "key": "HOME_NTFY_TOKEN",
           "value": "${HOME_NTFY_TOKEN}"
         }
