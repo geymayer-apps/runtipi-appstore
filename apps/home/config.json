@@ -9,8 +9,8 @@
     "automation"
   ],
   "description": "Hub for the Home apps (iOS, watchOS, Android, Wear OS, desktop) and the web app it serves at its own address: talks to the devices in the home network (Shellys first), keeps rooms, people and rights, runs scenes and rules, records history and energy, rings the phones when someone is at the door. Expose it on its domain; the apps and the Shellys connect there.",
-  "tipi_version": 16,
-  "version": "0.16.0",
+  "tipi_version": 17,
+  "version": "0.16.1",
   "source": "https://github.com/geymayer-apps/home",
   "exposable": true,
   "force_expose": true,
@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1795124107154,
+  "updated_at": 1795129096633,
   "dynamic_config": true,
   "form_fields": [
     {
@@ -75,14 +75,14 @@
       "env_variable": "HOME_NTFY_URL",
       "required": false,
       "placeholder": "https://ntfy.example.org",
-      "hint": "Optional. The ntfy server the Android phones get rings through (UnifiedPush). The hub sends only to endpoints on this server, with the token below."
+      "hint": "Optional. The ntfy server the Android phones get rings through (UnifiedPush). The hub sends only to endpoints on this server; the address alone is enough when the server lets anyone write to the up* topics."
     },
     {
       "type": "password",
       "label": "ntfy token for Android pushes",
       "env_variable": "HOME_NTFY_TOKEN",
       "required": false,
-      "hint": "Optional. A token of an ntfy user that may write to the UnifiedPush topics (up*) on your ntfy server. Without it Android devices get no pushes."
+      "hint": "Optional, only for an ntfy server with access control: a token of an ntfy user that may write to the UnifiedPush topics (up*). Or allow it on the server: ntfy access everyone 'up*' write-only."
     }
   ]
 }
