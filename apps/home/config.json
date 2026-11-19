@@ -9,8 +9,8 @@
     "automation"
   ],
   "description": "Hub for the Home apps (iOS, watchOS, Android, Wear OS, desktop) and the web app it serves at its own address: talks to the devices in the home network (Shellys first), keeps rooms, people and rights, runs scenes and rules, records history and energy, rings the phones when someone is at the door. Expose it on its domain; the apps and the Shellys connect there.",
-  "tipi_version": 7,
-  "version": "0.7.0",
+  "tipi_version": 8,
+  "version": "0.8.0",
   "source": "https://github.com/geymayer-apps/home",
   "exposable": true,
   "force_expose": true,
@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1795054543675,
+  "updated_at": 1795058278333,
   "dynamic_config": true,
   "form_fields": [
     {
@@ -37,7 +37,7 @@
       "env_variable": "HOME_SUBNET",
       "required": false,
       "placeholder": "192.168.1.0/24",
-      "hint": "The network the hub searches for Shellys (at most a /22). The found ones are listed in the app to import or ignore; you can change the network there too."
+      "hint": "The home network (at most a /22): the hub searches it for Shellys, listed in the app to import or ignore, and a phone there counts as at home when its person shares that (rules on arriving and leaving). You can change it in the app too."
     },
     {
       "type": "text",
