@@ -21,9 +21,10 @@ does not need to be reachable from the internet.
   and switches it from the apps, scenes and rules; a Shelly's settings change only when an owner
   approves the change, with a backup of the Shelly before. "Shellys to import" imports addresses
   at once. With neither field, the hub shows a simulated flat.
-- **Other devices**: the door station and cameras, the inverters and the weather station in the
-  home network, and the vendors' clouds (air conditioning, appliances, heating and more) are set
-  up in the app (Setup), where each one asks for its address or a sign-in.
+- **Other devices**: the door station and cameras, the inverters, the weather station, the TV, a
+  Jellyfin server and a Roborock robot vacuum in the home network, and the vendors' clouds (air
+  conditioning, appliances, heating, a MOVA robot vacuum) are set up in the app (Setup), where each
+  one asks for its address or a sign-in.
   Whatever a Shelly can do on its own (timers, schedules, wall switches) keeps working while this
   server is down.
 - **Live video and talk**: the hub plays the door station's video to the phones itself, over
