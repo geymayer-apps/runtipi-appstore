@@ -21,7 +21,10 @@ does not need to be reachable from the internet.
   and switches it from the apps, scenes and rules; a Shelly's settings change only when an owner
   approves the change, with a backup of the Shelly before. "Shellys to import" imports addresses
   at once. With neither field, the hub shows a simulated flat. Shelly BLU sensors (motion,
-  door and window, temperature, buttons) paired with a Shelly Pro come in with that Pro.
+  door and window, temperature, buttons) paired with a Shelly Pro come in with that Pro. Shelly
+  energy meters (Pro 3EM, Pro EM) are meters; "Grid meter" names the one at the grid connection.
+- **Battery Shellys** (H&T): they sleep, so the hub hears them over MQTT. Enter your broker in the
+  Shelly plugin's settings and turn on MQTT with RPC notifications on each device.
 - **Other devices**: the door station and cameras, the inverters, the weather station, the TV, a
   Jellyfin server and a Roborock robot vacuum in the home network, and the vendors' clouds (air
   conditioning, appliances, heating, a MOVA robot vacuum, the day-ahead electricity price from
