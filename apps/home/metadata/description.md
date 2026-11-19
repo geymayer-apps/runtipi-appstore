@@ -30,6 +30,10 @@ does not need to be reachable from the internet.
   the bridge's link button; its lights come in as dimmers, with their white and colour.
 - **KNX**: the KNX IP interface's address and a list of devices with their group addresses, one per
   line (Setup › Plugins › KNX).
+- **Home Connect** (Siemens, Bosch, Neff, Gaggenau): register an application at
+  developer.home-connect.com with the redirect URI `https://<this app's domain>/v1/signin/callback`,
+  enter its client id and secret in the app (Setup › Home Connect) and sign in; hobs (only to look
+  at), their integrated extractors, hoods, washers, dryers, dishwashers and ovens come in.
 - **Other devices**: the door station and cameras, the inverters, the weather station, the TV, a
   Jellyfin server and a Roborock robot vacuum in the home network, and the vendors' clouds (air
   conditioning, appliances, heating, a MOVA robot vacuum, the day-ahead electricity price from
