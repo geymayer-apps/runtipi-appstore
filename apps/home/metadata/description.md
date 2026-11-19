@@ -5,9 +5,10 @@ at its own address. It talks to the devices in the home network, Shellys first, 
 and their rights, runs scenes and rules, records history and energy, and rings the phones when
 someone is at the door. The data stays on this server.
 
-**Early version (0.1).** The hub reads its devices and shows them to the apps; it does not switch
-anything yet, and there is no pairing: one access token, printed on this server with
-`docker exec <container> /app/docker-entrypoint.sh token`, opens it.
+**Pairing.** The first owner's phone pairs with a code printed on this server:
+`docker exec <container> /app/docker-entrypoint.sh pair -name <your name>`. Every other phone,
+watch, computer and browser gets its code from an owner's app (People). Each person sees and
+switches only what their rights allow.
 
 ## Setup
 
@@ -16,9 +17,13 @@ there (their WebSockets must pass the proxy). The domain is reachable at home an
 does not need to be reachable from the internet.
 
 - **Shellys**: the hub searches the "Home network" for Shellys and lists them in the app, where
-  each one is imported or ignored. It connects to an imported Shelly over the Shelly's own
-  WebSocket and only reads it; nothing changes on the Shelly. "Shellys to import" imports
-  addresses at once. With neither field, the hub shows a simulated flat.
+  each one is imported or ignored. It follows an imported Shelly over the Shelly's own WebSocket
+  and switches it from the apps, scenes and rules; a Shelly's settings change only when an owner
+  approves the change, with a backup of the Shelly before. "Shellys to import" imports addresses
+  at once. With neither field, the hub shows a simulated flat.
+- **Other devices**: the door station and cameras, the inverters and the weather station in the
+  home network, and the vendors' clouds (air conditioning, appliances, heating and more) are set
+  up in the app (Setup), where each one asks for its address or a sign-in.
   Whatever a Shelly can do on its own (timers, schedules, wall switches) keeps working while this
   server is down.
 - **Live video and talk**: the hub plays the door station's video to the phones itself, over
