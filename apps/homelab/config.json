@@ -9,8 +9,8 @@
     "utilities"
   ],
   "description": "Server for the Homelab app: it watches the build machines (Mac, PC, homelab), the organisation's GitHub Actions runners and CI, the projects and releases in dev-infra, and the apps of this Runtipi, and sends an alert through ntfy when something needs attention, with the steps to fix it. The Android app pairs with it on the home network or over the VPN. It runs on the host network (port 8230) so it can wake the PC with Wake-on-LAN and reach Runtipi at http://localhost. Keep it off the internet.",
-  "tipi_version": 1,
-  "version": "0.1.0",
+  "tipi_version": 2,
+  "version": "0.2.0",
   "source": "https://github.com/geymayer-apps/homelab",
   "exposable": false,
   "no_gui": true,
@@ -19,7 +19,7 @@
     "amd64"
   ],
   "created_at": 1795025070000,
-  "updated_at": 1795025070000,
+  "updated_at": 1795093501473,
   "dynamic_config": true,
   "form_fields": [
     {

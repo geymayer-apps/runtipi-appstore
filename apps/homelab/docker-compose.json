@@ -2,21 +2,51 @@
   "services": [
     {
       "name": "homelab",
-      "image": "ghcr.io/geymayer-apps/homelab-server:0.1.0",
+      "image": "ghcr.io/geymayer-apps/homelab-server:0.2.0",
       "isMain": true,
       "internalPort": 8230,
       "networkMode": "host",
       "environment": [
-        { "key": "TZ", "value": "${TZ}" },
-        { "key": "HOMELAB_PAIRING_SECRET", "value": "${HOMELAB_PAIRING_SECRET}" },
-        { "key": "HOMELAB_GITHUB_TOKEN", "value": "${HOMELAB_GITHUB_TOKEN}" },
-        { "key": "HOMELAB_GITHUB_ORG", "value": "${HOMELAB_GITHUB_ORG}" },
-        { "key": "HOMELAB_RUNTIPI_URL", "value": "${HOMELAB_RUNTIPI_URL}" },
-        { "key": "HOMELAB_NTFY_URL", "value": "${HOMELAB_NTFY_URL}" },
-        { "key": "HOMELAB_NTFY_TOPIC", "value": "${HOMELAB_NTFY_TOPIC}" },
-        { "key": "HOMELAB_NTFY_TOKEN", "value": "${HOMELAB_NTFY_TOKEN}" },
-        { "key": "HOMELAB_WAKE_PC_MAC", "value": "${HOMELAB_WAKE_PC_MAC}" },
-        { "key": "HOMELAB_WAKE_BROADCAST", "value": "${HOMELAB_WAKE_BROADCAST}" }
+        {
+          "key": "TZ",
+          "value": "${TZ}"
+        },
+        {
+          "key": "HOMELAB_PAIRING_SECRET",
+          "value": "${HOMELAB_PAIRING_SECRET}"
+        },
+        {
+          "key": "HOMELAB_GITHUB_TOKEN",
+          "value": "${HOMELAB_GITHUB_TOKEN}"
+        },
+        {
+          "key": "HOMELAB_GITHUB_ORG",
+          "value": "${HOMELAB_GITHUB_ORG}"
+        },
+        {
+          "key": "HOMELAB_RUNTIPI_URL",
+          "value": "${HOMELAB_RUNTIPI_URL}"
+        },
+        {
+          "key": "HOMELAB_NTFY_URL",
+          "value": "${HOMELAB_NTFY_URL}"
+        },
+        {
+          "key": "HOMELAB_NTFY_TOPIC",
+          "value": "${HOMELAB_NTFY_TOPIC}"
+        },
+        {
+          "key": "HOMELAB_NTFY_TOKEN",
+          "value": "${HOMELAB_NTFY_TOKEN}"
+        },
+        {
+          "key": "HOMELAB_WAKE_PC_MAC",
+          "value": "${HOMELAB_WAKE_PC_MAC}"
+        },
+        {
+          "key": "HOMELAB_WAKE_BROADCAST",
+          "value": "${HOMELAB_WAKE_BROADCAST}"
+        }
       ],
       "volumes": [
         {
