@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "home",
-      "image": "ghcr.io/geymayer-apps/home-server:0.19.0",
+      "image": "ghcr.io/geymayer-apps/home-server:0.20.0",
       "isMain": true,
       "internalPort": 8200,
       "environment": [
@@ -53,6 +53,10 @@
         {
           "key": "HOME_NTFY_TOKEN",
           "value": "${HOME_NTFY_TOKEN}"
+        },
+        {
+          "key": "HOME_RELEASES_TOKEN",
+          "value": "${HOME_RELEASES_TOKEN}"
         }
       ],
       "volumes": [
