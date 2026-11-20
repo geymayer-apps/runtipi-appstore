@@ -24,6 +24,15 @@
   "dynamic_config": true,
   "form_fields": [
     {
+      "type": "random",
+      "label": "Einrichtungscode (setup code)",
+      "hint": "Generated at install. In the Home app or on the hub's own web page, \"Hub einrichten\" asks for it to make you the first owner; it also brings an owner back in after a lost phone and approves the only owner's new fingerprint key. Keep it to yourself.",
+      "required": false,
+      "env_variable": "HOME_SETUP_CODE",
+      "min": 16,
+      "encoding": "hex"
+    },
+    {
       "type": "fqdnip",
       "label": "Address of this server for the phones",
       "env_variable": "WEBRTC_HOST",

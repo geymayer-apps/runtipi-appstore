@@ -5,10 +5,15 @@ at its own address. It talks to the devices in the home network, Shellys first, 
 and their rights, runs scenes and rules, records history and energy, and rings the phones when
 someone is at the door. The data stays on this server.
 
-**Pairing.** The first owner's phone pairs with a code printed on this server:
-`docker exec <container> /app/docker-entrypoint.sh pair -name <your name>`. Every other phone,
-watch, computer and browser gets its code from an owner's app (People). Each person sees and
-switches only what their rights allow.
+**Setting it up.** Open the hub's address in a browser, or enter it in the Home app: a new hub
+shows "Hub einrichten". Enter the **Einrichtungscode** from this app's settings (generated at
+install) and your name, and you are the first owner. Set up in a browser, the page then shows the
+invitation for your phone as a QR. Every other phone, watch, computer and browser gets its
+invitation from an owner's app (People). With the same code an owner who lost their phone pairs a
+new one ("Zugang wiederherstellen" on the pairing screen), and the only owner approves their own
+phone's new fingerprint key ("Mit Einrichtungscode freigeben"). Each person sees and switches only
+what their rights allow. The terminal (`docker exec <container> /app/docker-entrypoint.sh pair
+-name <your name>`) stays as the fallback.
 
 ## Setup
 

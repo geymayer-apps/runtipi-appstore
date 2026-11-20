@@ -57,6 +57,10 @@
         {
           "key": "HOME_RELEASES_TOKEN",
           "value": "${HOME_RELEASES_TOKEN}"
+        },
+        {
+          "key": "HOME_SETUP_CODE",
+          "value": "${HOME_SETUP_CODE}"
         }
       ],
       "volumes": [
