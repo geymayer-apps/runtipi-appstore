@@ -9,8 +9,8 @@
     "automation"
   ],
   "description": "Hub for the Home apps (iOS, watchOS, Android, Wear OS, desktop) and the web app it serves at its own address: talks to the devices in the home network (Shellys first), keeps rooms, people and rights, runs scenes and rules, records history and energy, rings the phones when someone is at the door. Expose it on its domain; the apps and the Shellys connect there.",
-  "tipi_version": 21,
-  "version": "0.19.0",
+  "tipi_version": 22,
+  "version": "0.20.0",
   "source": "https://github.com/geymayer-apps/home",
   "exposable": true,
   "force_expose": true,
@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1795168338906,
+  "updated_at": 1795174693832,
   "dynamic_config": true,
   "form_fields": [
     {
@@ -83,6 +83,13 @@
       "env_variable": "HOME_NTFY_TOKEN",
       "required": false,
       "hint": "Optional, only for an ntfy server with access control: a token of an ntfy user that may write to the UnifiedPush topics (up*). Or allow it on the server: ntfy access everyone 'up*' write-only."
+    },
+    {
+      "type": "password",
+      "label": "GitHub token for the app download (optional)",
+      "env_variable": "HOME_RELEASES_TOKEN",
+      "required": false,
+      "hint": "A fine-grained GitHub token with read access to the contents of the home repository only. With it, the hub offers the Android app for download on its invitation page (/pair); without it, people install the app with Obtainium."
     }
   ]
 }
