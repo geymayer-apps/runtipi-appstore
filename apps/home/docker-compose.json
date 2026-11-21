@@ -5,6 +5,7 @@
       "image": "ghcr.io/geymayer-apps/home-server:0.28.0",
       "isMain": true,
       "internalPort": 8200,
+      "restart": "unless-stopped",
       "environment": [
         {
           "key": "TZ",
