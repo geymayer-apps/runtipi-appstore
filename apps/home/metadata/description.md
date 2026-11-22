@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.31.1:** Dasselbe wie 0.31.0, das nicht in den Store kam: ein Raum kann überall dasselbe, die App wirkt einheitlicher, Erweiterungen starten zuverlässiger.
+**Neu in 0.32.0:** Benachrichtigungen haben Symbole und auf Android eigene Töne je Art. Die App ist schneller und kleiner, und ihre Knöpfe und Karten sind einheitlich.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
