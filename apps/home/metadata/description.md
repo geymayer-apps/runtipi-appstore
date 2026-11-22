@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.30.0:** Home sagt jetzt nach jedem Update, was neu ist. Dazu: Rollos über ihr Symbol, verschiebbare Zonen-Schilder und ein Name für den Standort.
+**Neu in 0.31.1:** Dasselbe wie 0.31.0, das nicht in den Store kam: ein Raum kann überall dasselbe, die App wirkt einheitlicher, Erweiterungen starten zuverlässiger.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
