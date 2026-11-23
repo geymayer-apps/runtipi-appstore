@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.35.1:** Claude-Zugang gibt jetzt auch die Namen frei, die Ihr Euren Geräten in deren eigener Oberfläche oder in Home Assistant gegeben habt.
+**Neu in 0.36.0:** Aus Regeln werden Routinen: einfach als Satz oder frei verbunden wie Bausteine, beides für dieselbe Routine. Dazu NFC-Tags, weiches Licht im Plan und Platzieren mit Pfeilen.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
