@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.34.0:** Stockwerke wechselt Ihr jetzt mit einem Wisch nach oben und unten, Lampen und Rollos stellt Ihr direkt am Plan ein, und beim Tippen bleibt alles über der Tastatur.
+**Neu in 0.35.0:** Home merkt jetzt, wenn Ihr nach Hause kommt oder an Euren Orten seid, weckt Computer per Netzwerk, und auf dem Plan seht Ihr genau, wo etwas landet.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
