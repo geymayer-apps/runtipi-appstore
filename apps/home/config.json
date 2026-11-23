@@ -9,8 +9,8 @@
     "automation"
   ],
   "description": "Hub for the Home apps (iOS, watchOS, Android, Wear OS, desktop) and the web app it serves at its own address: talks to the devices in the home network (Shellys first), keeps rooms, people and rights, runs scenes and rules, records history and energy, rings the phones when someone is at the door. Expose it on its domain; the apps and the Shellys connect there.",
-  "tipi_version": 40,
-  "version": "0.36.0",
+  "tipi_version": 41,
+  "version": "0.36.1",
   "source": "https://github.com/geymayer-apps/home",
   "exposable": true,
   "force_expose": true,
@@ -20,7 +20,7 @@
     "amd64"
   ],
   "created_at": 1794961769741,
-  "updated_at": 1795472214971,
+  "updated_at": 1795472660717,
   "dynamic_config": true,
   "form_fields": [
     {
