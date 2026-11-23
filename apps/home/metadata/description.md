@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.32.1:** Die App startet wieder: 0.32.0 stürzte auf dem Telefon nach dem Update ab.
+**Neu in 0.33.1:** Claude kennt Eure Namen und schlägt Geräte-Arten, Räume, Szenen und Regeln vor. Der Plan zeigt alle Geräte, und Sheets stehen frei über der Leiste.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
