@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.33.1:** Claude kennt Eure Namen und schlägt Geräte-Arten, Räume, Szenen und Regeln vor. Der Plan zeigt alle Geräte, und Sheets stehen frei über der Leiste.
+**Neu in 0.34.0:** Stockwerke wechselt Ihr jetzt mit einem Wisch nach oben und unten, Lampen und Rollos stellt Ihr direkt am Plan ein, und beim Tippen bleibt alles über der Tastatur.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
