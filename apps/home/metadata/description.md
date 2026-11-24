@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.44.0:** Eine Geräteseite mit allem, was ein Gerät kann, Saugroboter mit allen Möglichkeiten, Fernseher und AV-Receiver, mehr Klima und eine neue Bedienung auf dem Plan.
+**Neu in 0.45.0:** Neue Erweiterungen für Haushaltsgeräte, Kameras und den Garten, Bewegungslicht direkt am Shelly Pro, der Weg des Saugroboters auf dem Plan und ein Schutz für Tore.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
