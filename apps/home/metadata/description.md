@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.42.0:** Wechselrichter von SMA, Kostal, SolarEdge und Huawei, Viessmann-Heizungen und ESPHome-Geräte, dazu ein strengerer Schutz für Tore und Schlösser.
+**Neu in 0.43.0:** Jede Lampe mit ihrer Lichtart und ihren Einstellungen, Rollläden, Markisen und Vorhänge in ihren Arten, der Medien-Tab mit Jellyfin, Sonos und Google Cast, dazu Home für macOS und Windows.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
