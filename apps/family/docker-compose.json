@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "family",
-      "image": "ghcr.io/geymayer-apps/family-server:0.19.1",
+      "image": "ghcr.io/geymayer-apps/family-server:0.20.0",
       "isMain": true,
       "internalPort": 8140,
       "environment": [
