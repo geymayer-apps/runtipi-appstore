@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.37.0:** Der Plan ist aufgeräumt: auf dem Stockwerk ein Schild je Raum, die Geräte erst beim Heranzoomen. Dazu Zweck-Kacheln mit Reglern und einfachere Einrichtung der Erweiterungen.
+**Neu in 0.40.0:** Homematic IP, Zigbee2MQTT, IKEA DIRIGERA und FRITZ!Box: die verbreitetsten Funk-Systeme im Haushalt, alle im Heimnetz ohne Cloud.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
