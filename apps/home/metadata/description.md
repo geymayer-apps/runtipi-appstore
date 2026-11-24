@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.41.0:** Licht im Plan sieht jetzt aus wie Licht: warme Kegel, die durch Türen fallen. Dazu Möbel auf dem Plan, im Editor gestellt, gedreht und ausgerichtet.
+**Neu in 0.42.0:** Wechselrichter von SMA, Kostal, SolarEdge und Huawei, Viessmann-Heizungen und ESPHome-Geräte, dazu ein strengerer Schutz für Tore und Schlösser.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
