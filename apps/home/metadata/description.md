@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.40.0:** Homematic IP, Zigbee2MQTT, IKEA DIRIGERA und FRITZ!Box: die verbreitetsten Funk-Systeme im Haushalt, alle im Heimnetz ohne Cloud.
+**Neu in 0.41.0:** Licht im Plan sieht jetzt aus wie Licht: warme Kegel, die durch Türen fallen. Dazu Möbel auf dem Plan, im Editor gestellt, gedreht und ausgerichtet.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
