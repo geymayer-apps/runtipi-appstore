@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.48.0:** Waschmaschine, Backofen, Kühlschrank und Klimaanlage von Miele, Siemens, Bosch und Daikin mit allem, was sie können, eine schnellere Web-App und klare Worte zu Jellyfin und zu Deinen Daten.
+**Neu in 0.48.1:** Die Desktop-App für Windows und macOS startet wieder.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
