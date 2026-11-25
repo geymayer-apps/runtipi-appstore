@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.46.0:** Wärmepumpen von NIBE, iDM, Lambda und Stiebel Eltron, ein Plan, der sich schwungvoll schieben lässt und mehr Raumnamen zeigt, und Routinen mit Freigabe für geschützte Geräte.
+**Neu in 0.47.0:** Der Garten auf dem Plan: Grundstück, Außenbereiche, Rasen, Wege und Bäume, mit Schatten nach dem Stand der Sonne, auf jedem Stockwerk Terrassen und Balkone.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
