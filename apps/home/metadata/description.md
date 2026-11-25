@@ -5,7 +5,7 @@
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
 and their rights, runs scenes and rules, records history and energy, and rings the phones when
-someone is at the door. The data stays on this server.
+someone is at the door. The data is stored on this server; devices that only work through their vendor's cloud need an account there.
 
 **Setting it up.** Open the hub's address in a browser, or enter it in the Home app: a new hub
 shows "Hub einrichten". It asks for the **Einrichtungscode**: the one you set in this app's
