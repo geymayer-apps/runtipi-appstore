@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.48.1:** Die Desktop-App für Windows und macOS startet wieder.
+**Neu in 0.49.0:** Flächen im Garten frei zeichnen und ändern, „Objekte“ statt „Möbel“, kleine Dinge sicher greifen, und mehr von Shelly, Sungrow und den Saugrobotern.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
