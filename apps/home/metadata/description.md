@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.56.0:** Zuhause zoomt ruhig in einen Raum und wieder hinaus, Kacheln-Tabs öffnen Kacheln wie Zuhause, und Player, die kommen und gehen, gelten nicht mehr als Störung.
+**Neu in 0.57.0:** Diagramme lassen sich ablesen, Energie ordnet jede Person selbst, kleine Räume sind erreichbar, laufende Änderungen findet man wieder, und eine Kachel kann mehrere Dinge zusammenfassen.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
