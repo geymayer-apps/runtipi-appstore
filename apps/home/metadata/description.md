@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.51.0:** Licht und Schalter für eine gewählte Zeit einschalten, dimmbares Licht sanft blenden.
+**Neu in 0.52.0:** Grundrisse aus CAD-Plänen des Architekten: Türen, Fenster, Raumnamen, Böden und Leitungen kommen mit, und ein neu importierter Plan nimmt Geräte und Räume mit.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
