@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "home",
-      "image": "ghcr.io/geymayer-apps/home-server:0.49.0",
+      "image": "ghcr.io/geymayer-apps/home-server:0.50.0",
       "isMain": true,
       "internalPort": 8200,
       "restart": "unless-stopped",
