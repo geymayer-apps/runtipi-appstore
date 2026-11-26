@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.50.0:** Schnellere Releases mit Fokus auf Android, verlässlichere Tests und ein Fehler weniger bei Wärmepumpen im PV-Überschuss.
+**Neu in 0.51.0:** Licht und Schalter für eine gewählte Zeit einschalten, dimmbares Licht sanft blenden.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
