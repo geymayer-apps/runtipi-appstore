@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.54.0:** Mehr Kontrolle beim Abspielen mit Jellyfin: Tonspur und Untertitel, Zufall, Wiederholen und die Warteschlange.
+**Neu in 0.55.0:** Die Klingel lässt sich annehmen, abweisen und auflegen, auf jedem Telefon und im Sperrbildschirm; alle sehen, wer angenommen hat.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
