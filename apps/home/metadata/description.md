@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.53.0:** Die Fernbedienung kann mehr: Eingang wählen, Text in den Fernseher tippen, alle Apps starten und jede Taste, die das Gerät kennt.
+**Neu in 0.54.0:** Mehr Kontrolle beim Abspielen mit Jellyfin: Tonspur und Untertitel, Zufall, Wiederholen und die Warteschlange.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
