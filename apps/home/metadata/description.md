@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.64.0:** Abschnitte stehen überall gleich weit auseinander, und die Suche im Posteingang ist unten in Daumennähe.
+**Neu in 0.65.0:** Routinen können mehr: eine Bedingung je Schritt, der Wert von jetzt, Claude schlägt auch Abläufe vor, und auch ESPHome-Geräte hören Bluetooth-Sensoren.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
