@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.61.0:** Das Zoomen in einen Raum läuft ohne Ruckeln bis zum Ende, Zurück lässt sich mit der Geste anschauen, und der MOVA-Roboter schickt seine Karte.
+**Neu in 0.62.0:** Der Garten ist einen Tipp entfernt, draußen gibt es Bereiche wie Beete, im Keller geht das Licht von selbst aus, und zwischen Räumen bleibt kein Spalt.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
