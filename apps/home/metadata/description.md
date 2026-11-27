@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.65.0:** Routinen können mehr: eine Bedingung je Schritt, der Wert von jetzt, Claude schlägt auch Abläufe vor, und auch ESPHome-Geräte hören Bluetooth-Sensoren.
+**Neu in 0.66.0:** Zuhause zoomt flüssig: in einen Raum und zurück ohne Ruckeln, auch bei großen Plänen.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
