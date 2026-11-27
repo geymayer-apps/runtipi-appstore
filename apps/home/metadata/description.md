@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.62.0:** Der Garten ist einen Tipp entfernt, draußen gibt es Bereiche wie Beete, im Keller geht das Licht von selbst aus, und zwischen Räumen bleibt kein Spalt.
+**Neu in 0.63.0:** Der Kopf von Zuhause bleibt ruhig, der Energieverlauf zeigt richtige Werte, und Benachrichtigungen sagen genauer, was los ist.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
