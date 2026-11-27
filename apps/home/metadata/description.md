@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.58.0:** Geräte hinzufügen geht jetzt nach Marke, mit laufender Suche im Netz und über die Adresse.
+**Neu in 0.59.0:** Benachrichtigungen auf Android auf Deutsch, Geräte die offline sein dürfen ohne roten Hinweis, und „Ein für“ gleich sichtbar.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
