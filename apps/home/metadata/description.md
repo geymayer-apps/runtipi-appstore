@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.63.0:** Der Kopf von Zuhause bleibt ruhig, der Energieverlauf zeigt richtige Werte, und Benachrichtigungen sagen genauer, was los ist.
+**Neu in 0.64.0:** Abschnitte stehen überall gleich weit auseinander, und die Suche im Posteingang ist unten in Daumennähe.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
