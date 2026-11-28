@@ -1,6 +1,6 @@
 # Home
 
-**Neu in 0.68.0:** Unser Teil: in einem Haus mit mehreren Wohnungen sagt der Plan, welche Wohnung eure ist.
+**Neu in 0.69.0:** Dächer im Plan: Flachdach, Gründach, Glasdach und die Dachkante darüber; dazu der Ofen als Möbel.
 
 The hub of the Home apps (iPhone, Apple Watch, Android, Wear OS, desktop) and the web app it serves
 at its own address. It talks to the devices in the home network, Shellys first, keeps rooms, people
